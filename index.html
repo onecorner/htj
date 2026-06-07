@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>专业编程技术服务 - Python/爬虫/自动化/数据处理</title>
     <meta name="description" content="专业Python编程服务：网页爬虫、Excel自动化、批量文件处理、数据分析、脚本定制。24小时在线，快速交付。">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -123,6 +124,7 @@ result = pd.concat([
     pd.read_excel(f) for f in files
 ])
 result.to_excel("合并结果.xlsx")</code></pre>
+                    <p><a href="downloads/01-excel批量合并工具.py" download class="sample-download">下载完整代码</a></p>
                 </div>
                 <div class="sample-card">
                     <div class="sample-header">
@@ -136,6 +138,7 @@ from bs4 import BeautifulSoup
 html = fetch_page(url)
 data = parse_products(html)
 save_to_excel(data)</code></pre>
+                    <p><a href="downloads/02-网页数据采集器.py" download class="sample-download">下载完整代码</a></p>
                 </div>
                 <div class="sample-card">
                     <div class="sample-header">
@@ -148,6 +151,7 @@ for i, file in enumerate(files):
     ext = os.path.splitext(file)[1]
     new_name = f"照片_{i+1:03d}{ext}"
     os.rename(file, new_name)</code></pre>
+                    <p><a href="downloads/03-批量文件重命名工具.py" download class="sample-download">下载完整代码</a></p>
                 </div>
             </div>
             <div class="samples-more">
