@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例展示 - 编程技术服务</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../" class="logo">TechService<span class="accent">.pro</span></a>
+            <ul class="nav-links">
+                <li><a href="../#services">服务</a></li>
+                <li><a href="../#samples">案例</a></li>
+                <li><a href="../#pricing">价格</a></li>
+                <li><a href="../#contact" class="btn-nav">立即下单</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" style="padding-bottom: 60px;">
+        <div class="container">
+            <h1>完整案例库</h1>
+            <p class="hero-sub">每个案例都是真实可运行的项目，点击下载完整代码</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="samples-grid">
+                <div class="sample-card">
+                    <div class="sample-header">
+                        <span class="sample-tag">Excel</span>
+                    </div>
+                    <h3>Excel 批量合并工具</h3>
+                    <p>把多个Excel文件自动合并成一个，支持xlsx/xls格式。自动添加来源标记，方便追溯数据。</p>
+                    <pre><code>import pandas as pd
+import glob
+
+files = glob.glob("*.xlsx")
+all_data = []
+for f in files:
+    df = pd.read_excel(f)
+    df['来源'] = f
+    all_data.append(df)
+
+result = pd.concat(all_data, ignore_index=True)
+result.to_excel("合并结果.xlsx", index=False)</code></pre>
+                    <p><strong>适用场景：</strong>月报汇总、多店数据合并、部门报表整合</p>
+                    <p><strong>定价：</strong>¥49.9</p>
+                </div>
+
+                <div class="sample-card">
+                    <div class="sample-header">
+                        <span class="sample-tag">爬虫</span>
+                    </div>
+                    <h3>网页数据采集器</h3>
+                    <p>从目标网站批量采集公开数据，支持分页、自动识别编码、导出Excel。</p>
+                    <pre><code>import requests
+from bs4 import BeautifulSoup
+
+def fetch_page(url):
+    headers = {"User-Agent": "Mozilla/5.0"}
+    resp = requests.get(url, headers=headers, timeout=10)
+    return resp.text
+
+def parse_data(html):
+    soup = BeautifulSoup(html, 'html.parser')
+    # 根据目标网页结构调整选择器
+    items = soup.select('.item')
+    return [item.get_text(strip=True) for item in items]</code></pre>
+                    <p><strong>适用场景：</strong>竞品分析、商品采集、市场调研</p>
+                    <p><strong>定价：</strong>¥99.9起</p>
+                </div>
+
+                <div class="sample-card">
+                    <div class="sample-header">
+                        <span class="sample-tag">自动化</span>
+                    </div>
+                    <h3>批量文件重命名工具</h3>
+                    <p>带图形界面的批量重命名工具，支持多种命名规则，预览后再执行，安全可靠。</p>
+                    <pre><code>import os
+
+folder = "./photos"
+for i, fname in enumerate(os.listdir(folder), 1):
+    ext = os.path.splitext(fname)[1]
+    new_name = f"照片_{i:03d}{ext}"
+    os.rename(
+        os.path.join(folder, fname),
+        os.path.join(folder, new_name)
+    )</code></pre>
+                    <p><strong>适用场景：</strong>照片整理、文档归档、下载文件整理</p>
+                    <p><strong>定价：</strong>¥49.9</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 TechService.pro | 所有案例代码均可交付</p>
+        </div>
+    </footer>
+</body>
+</html>

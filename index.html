@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>专业编程技术服务 - Python/爬虫/自动化/数据处理</title>
+    <meta name="description" content="专业Python编程服务：网页爬虫、Excel自动化、批量文件处理、数据分析、脚本定制。24小时在线，快速交付。">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">TechService<span class="accent">.pro</span></a>
+            <ul class="nav-links">
+                <li><a href="#services">服务</a></li>
+                <li><a href="#samples">案例</a></li>
+                <li><a href="#pricing">价格</a></li>
+                <li><a href="#contact" class="btn-nav">立即下单</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>你需要一个靠谱的程序员？<br><span class="accent">我就是。</span></h1>
+            <p class="hero-sub">Python 脚本 · 网页爬虫 · 自动化工具 · 数据处理 · 10分钟响应</p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn-primary">立即咨询</a>
+                <a href="#samples" class="btn-secondary">看案例</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><span class="num">5</span><span class="label">分钟平均响应</span></div>
+                <div class="stat"><span class="num">100%</span><span class="label">满意度</span></div>
+                <div class="stat"><span class="num">24/7</span><span class="label">在线服务</span></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">我能做什么</h2>
+            <p class="section-desc">不懂技术完全没关系，告诉我你想要的效果就行</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🕸</div>
+                    <h3>网页爬虫 / 数据采集</h3>
+                    <p>从任何公开网站采集商品信息、文章、数据，导出为Excel/CSV。</p>
+                    <span class="price-tag">¥99.9起</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Excel 自动化处理</h3>
+                    <p>批量合并表格、数据清洗、报表生成、格式整理，鼠标点几下完成。</p>
+                    <span class="price-tag">¥49.9起</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📁</div>
+                    <h3>批量文件处理</h3>
+                    <p>重命名、分类归档、格式转换、PDF提取，几千个文件一键搞定。</p>
+                    <span class="price-tag">¥49.9起</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🤖</div>
+                    <h3>浏览器自动化 / RPA</h3>
+                    <p>自动填表、批量操作、定时任务，模拟人工操作，省时省力。</p>
+                    <span class="price-tag">¥99.9起</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>数据分析 & 可视化</h3>
+                    <p>数据清洗、统计分析、自动生成可视化图表和报告。</p>
+                    <span class="price-tag">¥99.9起</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Python 脚本定制</h3>
+                    <p>任何重复性工作、特殊需求，我写脚本一键搞定。</p>
+                    <span class="price-tag">¥49.9起</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">为什么找我</h2>
+            <div class="benefits-grid">
+                <div class="benefit">
+                    <h3>⚡ 极速交付</h3>
+                    <p>简单任务 1小时内交付，复杂项目不超过 24 小时</p>
+                </div>
+                <div class="benefit">
+                    <h3>🔄 无限修改</h3>
+                    <p>改到你满意为止，不加收一分钱</p>
+                </div>
+                <div class="benefit">
+                    <h3>🔒 源码交付</h3>
+                    <p>完整代码给你，没有任何隐藏限制</p>
+                </div>
+                <div class="benefit">
+                    <h3>🎯 不懂技术？没关系</h3>
+                    <p>描述你想要的效果，我来实现</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="samples" class="section">
+        <div class="container">
+            <h2 class="section-title">真实案例</h2>
+            <div class="samples-grid">
+                <div class="sample-card">
+                    <div class="sample-header">
+                        <span class="sample-tag">Excel</span>
+                    </div>
+                    <h3>Excel 批量合并工具</h3>
+                    <p>50个分店销售报表 → 一键合并成总表。选文件夹，点运行，3秒出结果。</p>
+                    <pre><code># 核心代码仅 20 行
+import pandas as pd
+import glob
+files = glob.glob("*.xlsx")
+result = pd.concat([
+    pd.read_excel(f) for f in files
+])
+result.to_excel("合并结果.xlsx")</code></pre>
+                </div>
+                <div class="sample-card">
+                    <div class="sample-header">
+                        <span class="sample-tag">爬虫</span>
+                    </div>
+                    <h3>网页数据采集器</h3>
+                    <p>采集电商网站商品信息：标题、价格、销量。自动翻页，导出Excel。</p>
+                    <pre><code># 通用爬虫框架
+import requests
+from bs4 import BeautifulSoup
+html = fetch_page(url)
+data = parse_products(html)
+save_to_excel(data)</code></pre>
+                </div>
+                <div class="sample-card">
+                    <div class="sample-header">
+                        <span class="sample-tag">自动化</span>
+                    </div>
+                    <h3>批量文件重命名工具</h3>
+                    <p>2000张照片按"日期_序号"自动重命名。带图形界面，点几下就行。</p>
+                    <pre><code># 自动重命名核心逻辑
+for i, file in enumerate(files):
+    ext = os.path.splitext(file)[1]
+    new_name = f"照片_{i+1:03d}{ext}"
+    os.rename(file, new_name)</code></pre>
+                </div>
+            </div>
+            <div class="samples-more">
+                <p>更多案例和代码 → <a href="samples/" target="_blank">查看完整案例库</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">透明定价</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>简单脚本</h3>
+                    <div class="price">¥49.9</div>
+                    <ul>
+                        <li>文件批量处理</li>
+                        <li>格式转换</li>
+                        <li>文本处理</li>
+                        <li>简单数据整理</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary">下单</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="popular">最受欢迎</div>
+                    <h3>标准项目</h3>
+                    <div class="price">¥99.9</div>
+                    <ul>
+                        <li>网页数据采集</li>
+                        <li>Excel 自动化</li>
+                        <li>浏览器自动化</li>
+                        <li>数据分析报告</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary">下单</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>复杂定制</h3>
+                    <div class="price">¥199.9起</div>
+                    <ul>
+                        <li>多平台采集系统</li>
+                        <li>完整自动化流程</li>
+                        <li>定制工具开发</li>
+                        <li>长期维护</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary">咨询报价</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="section">
+        <div class="container">
+            <h2 class="section-title">合作流程</h2>
+            <div class="process-flow">
+                <div class="process-step">
+                    <div class="step-num">1</div>
+                    <h3>告诉我需求</h3>
+                    <p>描述你想要的效果，不需要懂技术</p>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-step">
+                    <div class="step-num">2</div>
+                    <h3>我报价</h3>
+                    <p>给你明确的价格和交付时间</p>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-step">
+                    <div class="step-num">3</div>
+                    <h3>写代码交付</h3>
+                    <p>完成后发你测试，满意再付款</p>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-step">
+                    <div class="step-num">4</div>
+                    <h3>不满意免费改</h3>
+                    <p>无限修改到满意为止</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section section-accent">
+        <div class="container">
+            <h2 class="section-title">立即下单</h2>
+            <p class="section-desc">直接联系我，10分钟内响应</p>
+            <div class="contact-methods">
+                <div class="contact-card">
+                    <h3>📱 闲鱼</h3>
+                    <p>搜索 "Python编程 爬虫 脚本"</p>
+                </div>
+                <div class="contact-card">
+                    <h3>💬 微信</h3>
+                    <p>联系我获取微信号</p>
+                </div>
+                <div class="contact-card">
+                    <h3>📧 需求留言</h3>
+                    <p>简单描述你的需求，我会主动联系你</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>快速留言</h3>
+                <form id="orderForm">
+                    <input type="text" placeholder="你的称呼" required>
+                    <input type="text" placeholder="联系方式（微信/手机）" required>
+                    <textarea placeholder="描述你的需求...&#10;例：我需要把100个Excel表格合并成一个&#10;例：我想采集某个网站的商品数据" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">提交需求</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 TechService.pro | 专业编程技术服务</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
