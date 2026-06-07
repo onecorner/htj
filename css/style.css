@@ -579,3 +579,32 @@ footer {
 .service-card:nth-child(4) { animation-delay: 0.3s; }
 .service-card:nth-child(5) { animation-delay: 0.4s; }
 .service-card:nth-child(6) { animation-delay: 0.5s; }
+
+/* === Copy hint === */
+.copy-hint {
+    color: var(--primary);
+    font-size: 0.75rem;
+    cursor: pointer;
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    padding: 1px 6px;
+    margin-left: 4px;
+    user-select: none;
+}
+.copy-hint:hover { background: rgba(37,99,235,0.15); }
+
+/* === Toast === */
+.toast {
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #22c55e;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-weight: 600;
+    z-index: 999;
+    animation: fadeIn 0.3s ease-out;
+    box-shadow: 0 4px 20px rgba(34,197,94,0.3);
+}

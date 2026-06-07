@@ -260,25 +260,30 @@ for i, file in enumerate(files):
             <p class="section-desc">直接联系我，10分钟内响应</p>
             <div class="contact-methods">
                 <div class="contact-card">
+                    <h3>💬 微信</h3>
+                    <p><strong>jzone120</strong> <span class="copy-hint" onclick="navigator.clipboard.writeText('jzone120')">点击复制</span></p>
+                    <p style="font-size:0.8rem;color:var(--text-muted);margin-top:4px;">加好友时备注"编程"，优先通过</p>
+                </div>
+                <div class="contact-card">
                     <h3>📱 闲鱼</h3>
                     <p>搜索 "Python编程 爬虫 脚本"</p>
                 </div>
                 <div class="contact-card">
-                    <h3>💬 微信</h3>
-                    <p>联系我获取微信号</p>
-                </div>
-                <div class="contact-card">
                     <h3>📧 需求留言</h3>
-                    <p>简单描述你的需求，我会主动联系你</p>
+                    <p>填写下方表单，消息直接到我的邮箱，10分钟内必回</p>
                 </div>
             </div>
             <div class="contact-form">
                 <h3>快速留言</h3>
-                <form id="orderForm">
-                    <input type="text" placeholder="你的称呼" required>
-                    <input type="text" placeholder="联系方式（微信/手机）" required>
-                    <textarea placeholder="描述你的需求...&#10;例：我需要把100个Excel表格合并成一个&#10;例：我想采集某个网站的商品数据" rows="5" required></textarea>
+                <form id="orderForm" action="https://formsubmit.co/jhonselfjava@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="编程服务-新订单！">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="true">
+                    <input type="text" name="称呼" placeholder="你的称呼" required>
+                    <input type="text" name="联系方式" placeholder="微信号 / 手机号" required>
+                    <textarea name="需求描述" placeholder="描述你的需求...&#10;例：我需要把100个Excel表格合并成一个&#10;例：我想采集某个网站的商品数据" rows="5" required></textarea>
                     <button type="submit" class="btn-primary">提交需求</button>
+                    <p style="font-size:0.75rem;color:var(--text-muted);margin-top:8px;text-align:center;">提交后消息直接发到我的邮箱，不会出现在公网上</p>
                 </form>
             </div>
         </div>
